@@ -8,6 +8,6 @@ import org.koin.test.AutoCloseKoinTest
 open class KoinBaseTest: AutoCloseKoinTest() {
     @Before fun before() {
         startKoin(listOf(myModules)).loadProperties(KoinProperties(useKoinPropertiesFile = true))
-        App.init
+        App.init()
     }
 }
